@@ -8,13 +8,16 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- Link to Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
     <!-- CSS file -->
@@ -25,138 +28,9 @@
   </head>
 
   <body class="py-5">
-    <!-- <div class="d-flex justify-content-center align-items-center vh-100">
-      <div class="col-12 col-md-6 col-lg-4 border p-4 rounded">
-        <h1 class="text-center mb-5">Store Rental Recognition System (SRRS)</h1>
-
-        <div class="text-center mb-4">
-          <video
-            id="video"
-            class="border rounded mb-3"
-            autoplay
-            style="width: 100%; height: auto"
-          ></video>
-          <button id="snap" class="btn btn-success btn-lg mb-3">
-            <i class="fas fa-camera"></i> Take Picture
-          </button>
-          <canvas
-            id="canvas"
-            class="border rounded mb-3"
-            style="width: 100%; height: auto"
-          ></canvas>
-        </div>
-
-        <form id="capture-form">
-          <div class="mb-3">
-            <label for="ic_label" class="form-label">
-              Enter your Identification Number
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="ic_label"
-              placeholder="Example: 000123456789"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-success btn-lg w-100">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- <div class="d-flex justify-content-center align-items-center vh-100">
-      <div class="col-12 col-md-6 col-lg-4 border p-4 rounded">
-        <h1 class="text-center mb-5">Store Rental Recognition System (SRRS)</h1>
-
-        <div class="text-center mb-4">
-          <video
-            id="video"
-            class="border rounded mb-3"
-            autoplay
-            style="width: 100%; height: auto"
-          ></video>
-          <button id="snap" class="btn btn-success btn-lg mb-3">
-            <i class="fas fa-camera"></i> Take Picture
-          </button>
-          <canvas
-            id="canvas"
-            class="border rounded mb-3"
-            style="width: 100%; height: auto"
-          ></canvas>
-        </div>
-
-        <form id="capture-form">
-          <div class="mb-3">
-            <label for="ic_label" class="form-label"
-              >Enter your Identification Number</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="ic_label"
-              placeholder="Example: 000123456789"
-              required
-            />
-          </div>
-          <button type="submit" class="btn btn-success btn-lg w-100">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <h1 class="text-center mb-5">
-            Store Rental Recognition System (SRRS)
-          </h1>
-
-          <div class="text-center mb-4">
-            <div class="position-relative" style="height: 480px">
-              <video
-                id="video"
-                class="border rounded position-absolute top-0 start-0 w-100 h-100"
-                autoplay
-                playsinline
-              ></video>
-            </div>
-            <button id="snap" class="btn btn-success btn-lg mb-3">
-              <i class="fas fa-camera"></i> Take Picture
-            </button>
-            <canvas
-              id="canvas"
-              class="border rounded mb-3"
-              style="width: 100%; height: auto"
-            ></canvas>
-          </div>
-
-          <form id="capture-form">
-            <div class="mb-3">
-              <label for="ic_label" class="form-label"
-                >Enter your Identification Number</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="ic_label"
-                placeholder="Example: 000123456789"
-                required
-              />
-            </div>
-            <button type="submit" class="btn btn-success btn-lg w-100">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </div> -->
-
     <div class="container d-flex justify-content-center align-items-center">
       <!-- Responsive column sizing with Bootstrap -->
-      <div class="col-12 col-md-10 col-lg-8 p-3 border text-center">
+      <div class="col-12 col-md-10 col-lg-8 p-5 text-center form_container">
         <h1 class="mb-5">Store Rental Identification System (SRRS)</h1>
 
         <div class="mb-3">
@@ -168,22 +42,22 @@
           disabled
           class="btn btn-primary btn-lg mb-3"
         >
-          Take Picture
+          <i class="fa-solid fa-camera"></i> Take Picture
         </button>
 
         <div class="mb-3">
           <canvas id="canvas"></canvas>
         </div>
 
-        <form>
+        <form id="formTennant" class="mt-5">
           <div class="mb-3 text-start">
-            <label for="inputText" class="form-label text-start">
+            <label for="inputICNumber" class="form-label text-start">
               Enter your Identification Number:
             </label>
             <input
               type="text"
               class="form-control form-control-lg"
-              id="inputText"
+              id="inputICNumber"
               placeholder="Example: 000123456789"
             />
           </div>
